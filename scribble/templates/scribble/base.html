@@ -1,0 +1,16 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Scribble</title>
+        <link rel="stylesheet" href="{% static 'css/scribble.css' %}">
+    </head>
+    <body>
+        <h1>Scribble</h1>
+        <nav>
+            <a href="/comments">Comments</a>
+            <a href="/">Posts</a>
+        </nav>
+        {% block content %}
+        {% endblock %}
+    </body>
+</html>

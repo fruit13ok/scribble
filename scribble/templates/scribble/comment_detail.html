@@ -1,0 +1,5 @@
+{% extends 'scribble/base.html' %}
+{% block content %}
+<h2>{{ comment.body }} <a href="{% url 'comment_edit' pk=comment.pk %}">(edit)</a></h2>
+<h4>{{ comment.author }}</h4>
+{% endblock %}
